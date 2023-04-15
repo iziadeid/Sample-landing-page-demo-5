@@ -123,6 +123,8 @@ nav ul li #active:hover {
     width: 35%;
     color: #536876fc;
     display: flex;
+    display: flex;
+    align-items: center;
 }
 
 .container .parent .text h1 {
@@ -134,8 +136,8 @@ nav ul li #active:hover {
 }
 
 .container .parent .text p {
-    line-height: 1.7;
-    letter-spacing: 2;
+    line-height: 2;
+    letter-spacing: 2px;
     color: white;
     text-align: start;
 }
@@ -146,7 +148,7 @@ nav ul li #active:hover {
     color: #243139;
     text-decoration: none;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 40px;
     transition: 0.5s;
     font-weight: bold;
 }
@@ -161,15 +163,16 @@ nav ul li #active:hover {
     color: white;
     padding: 29px 10px 0 0;
     position: relative;
+    align-self: flex-start;
 }
 
 .container .parent .text p:nth-child(1)::after {
     content: "";
     position: absolute;
-    height: 35%;
+    height: 110px;
     width: 2px;
     background-color: #d36437;
-    bottom: 0;
+    top: 110%;
     left: 40%;
     transform: translateX(-50%);
 }
@@ -177,9 +180,9 @@ nav ul li #active:hover {
 .container .parent p.a {
 
     writing-mode: vertical-lr;
-    font-size: 50px;
+    font-size: 60px;
     color: #516674;
-    padding-right: 35px;
+    padding-right: 45px;
 
 }
 
@@ -241,7 +244,7 @@ nav ul li #active:hover {
 }
 
 .container .parent .num {
-    padding: 0px 15% 0 20px;
+    padding: 0px 15% 0 30px;
 }
 
 .container .parent .num li {
@@ -254,8 +257,8 @@ nav ul li #active:hover {
 }
 
 
-.container .parent .num li:nth-of-type(1) {
-    font-size: 45px;
+.container .parent .num li:nth-of-type(2) {
+    font-size: 50px;
     padding-bottom: 10px;
     color: white;
     position: relative;
@@ -265,19 +268,19 @@ nav ul li #active:hover {
     color: #c56f4c;
 }
 
-.container .parent .num li:nth-of-type(1)::after {
+.container .parent .num li:nth-of-type(2)::after {
     content: "";
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 5px;
     transform: translate(-20%, -100%);
     height: 4px;
-    width: 150%;
+    width: 130%;
     background-color: #d36437;
     transition: 0.5s;
 }
 
-.container .parent .num li:nth-of-type(1):hover::after {
+.container .parent .num li:nth-of-type(2):hover::after {
     background-color: white;
 }
 
