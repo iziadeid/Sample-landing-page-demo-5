@@ -177,7 +177,7 @@ nav ul li #active:hover {
     transform: translateX(-50%);
 }
 
-.container .parent p.a {
+.container .parent p.hide-text {
 
     writing-mode: vertical-lr;
     font-size: 60px;
@@ -219,10 +219,12 @@ nav ul li #active:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .container .center .image img {
     width: 160%;
+
 }
 
 @media (max-width:1250px) {
@@ -309,6 +311,24 @@ nav ul li #active:hover {
     border-radius: 4px;
     color: #243139;
     transition: 0.5s;
+
+
+}
+
+.container .social a.facebook {
+    animation: up 0.5s linear forwards;
+}
+
+.container .social a.youtube {
+    animation: up 0.5s 0.3s linear forwards;
+}
+
+.container .social a.twitter {
+    animation: up 0.5s 0.6s linear forwards;
+}
+
+.container .social a.whatsapp {
+    animation: up 0.5s 0.9s linear forwards;
 }
 
 .container .social a.facebook:hover {
@@ -316,17 +336,43 @@ nav ul li #active:hover {
     color: white;
 }
 
+
 .container .social a.youtube:hover {
     background-color: #bf2626;
     color: white;
 }
+
 
 .container .social a.twitter:hover {
     background-color: #1DA1F2;
     color: white;
 }
 
+
 .container .social a.whatsapp:hover {
     background-color: #075E54;
     color: white;
+}
+
+
+
+
+
+
+
+
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
 }
